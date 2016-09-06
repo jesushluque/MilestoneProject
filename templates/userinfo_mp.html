@@ -1,0 +1,27 @@
+<!doctype html>
+<title>A short quiz</title>
+<link rel=stylesheet type=text/css href='{{ url_for('static',filename='style_mp.css')}}'>
+    <div class=page>
+        <h1>Milestone project of Jesus Luque</h1>
+        <div class=metanav>
+            <h4>
+                The following data will be plotted:
+            </h4>
+                {{curv1}}
+            <h4>
+            
+            <form id='userinfoform_mp' method='post' action='index_mp' >
+                <p>
+                Choose which of the following curves you want to plot (can be more than one): <br />
+                <input type='radio' name='answer' value=1 /> Open <br />
+                <input type='radio' name='answer' value=2 /> High <br />
+                <input type='radio' name='answer' value=3 /> Low <br />
+                </p>
+                
+                <p>
+                <input type='submit' value='Submit' />
+                </p>
+            </form>
+            
+        </div>
+    </div>
